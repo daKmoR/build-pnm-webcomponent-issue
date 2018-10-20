@@ -1,0 +1,20 @@
+{
+  "private": true,
+  "dependencies": {
+    "test-webcomponent-feature-a": "^0.0.2",
+    "test-webcomponent-feature-b": "^0.0.3"
+  },
+  "devDependencies": {
+    "build-pnm": "^0.1.0",
+    "es-module-shims": "^0.1.15"
+  },
+  "scripts": {
+    "start": "yarn run unplug-webcomponents && build-pnm && yarn run update-shimmed && npx http-server",
+    "start:noShim": "npx polyserve --module-resolution node",
+    "unplug-webcomponents": "yarn unplug es-module-shims test-webcomponent test-webcomponent-feature-a test-webcomponent-feature-b --ignore-scripts",
+    "update-shimmed": "node ./update-shimmed.js"
+  },
+  "installConfig": {
+    "pnp": true
+  }
+}

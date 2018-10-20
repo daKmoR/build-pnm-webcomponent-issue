@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<body>
+  <script defer src="./.pnp/unplugged/npm-es-module-shims-0.1.15-3bdeda4ca968174562e2f73e76a89ff686a53165/node_modules/es-module-shims/dist/es-module-shims.js"></script>
+
+<!-- build-pnm-start -->
+<script type="packagemap-shim">
+{
+  "path_prefix": "/",
+  "packages": {
+    "test-webcomponent-feature-a": {
+      "path": ".pnp/unplugged/npm-test-webcomponent-feature-a-0.0.2-aca95c21974dd250da5f7e2f3a6f69a5de062605/node_modules/test-webcomponent-feature-a"
+    },
+    "test-webcomponent-feature-b": {
+      "path": ".pnp/unplugged/npm-test-webcomponent-feature-b-0.0.3-a075b55f1befc516135c89c4f7161aec97c5658a/node_modules/test-webcomponent-feature-b"
+    }
+  },
+  "scopes": {
+    ".pnp/unplugged/npm-test-webcomponent-feature-a-0.0.2-aca95c21974dd250da5f7e2f3a6f69a5de062605/node_modules/test-webcomponent-feature-a": {
+      "packages": {
+        "test-webcomponent": {
+          "path": "../../../npm-test-webcomponent-1.0.0-736ddbb77515624720ca1d7f978f5e825c138e5c/node_modules/test-webcomponent"
+        },
+        "test-webcomponent-feature-a": {
+          "path": "./"
+        }
+      }
+    },
+    ".pnp/unplugged/npm-test-webcomponent-1.0.0-736ddbb77515624720ca1d7f978f5e825c138e5c/node_modules/test-webcomponent": {
+      "packages": {
+        "test-webcomponent": {
+          "path": "./"
+        }
+      }
+    },
+    ".pnp/unplugged/npm-test-webcomponent-feature-b-0.0.3-a075b55f1befc516135c89c4f7161aec97c5658a/node_modules/test-webcomponent-feature-b": {
+      "packages": {
+        "test-webcomponent": {
+          "path": "../../../npm-test-webcomponent-2.0.0-3005c1f61994c848cf5157bb1f4df855ec6796b6/node_modules/test-webcomponent"
+        },
+        "test-webcomponent-feature-b": {
+          "path": "./"
+        }
+      }
+    },
+    ".pnp/unplugged/npm-test-webcomponent-2.0.0-3005c1f61994c848cf5157bb1f4df855ec6796b6/node_modules/test-webcomponent": {
+      "packages": {
+        "test-webcomponent": {
+          "path": "./"
+        }
+      }
+    }
+  }
+}
+</script>
+<!-- build-pnm-end -->
+
+  <script type="module-shim">
+    import 'test-webcomponent-feature-a/test-webcomponent-feature-a.js';
+    import 'test-webcomponent-feature-b/test-webcomponent-feature-b.js';
+  </script>
+
+  <test-webcomponent-feature-a></test-webcomponent-feature-a>
+  <test-webcomponent-feature-b></test-webcomponent-feature-b>
+</body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "name": "test-webcomponent-feature-b",
+  "version": "0.0.3",
+  "dependencies": {
+    "test-webcomponent": "^2.0.0"
+  }
+}
